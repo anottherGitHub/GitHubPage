@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+/* Reset de margens e padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Customização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark4);
+}
+
+/* Paleta de cores */
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --dark6: #2f2f45;
+    --cyan1: #70e3ea;
+}
+
+/* Estilo do corpo da página */
+body{
+    background-color: #34344e;
+    height: 100vh;
+    font-family: "Lato";
+}
+
+
+/* Estilo do cabeçalho e navegação */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--dark6);
+    min-height: 50px;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white)
+}
+
+.nav-links:hover{
+    color:var(--dark4);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+
+/* Estilo do conteúdo principal e seções */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+/* Estilização principal da seção */
+.fist-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.fist-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong{
+    color: var(--cyan1);
+}
+
+.fist-section p{
+    color: var(--white)
+}
+
+/* Estilos gerais de botões e formulários */
+:is(.button,.link-action,.contact-form,.custom-button){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    display: flex;
+    gap: 1rem;
+}
+
+:is(.btn-action,.contact-form,.custom-button){
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+:is(.btn-action,.custom-button):hover{
+    background-color:  var(--dark3);
+    border: 1px solid var(--dark3);
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+}
+
+/* Estilo de imagens */
+:is(.box-img-main,.img-foto-final){
+    max-width: 450px;
+    padding: 1rem;
+}
+
+:is(.img-profile,.img-foto-final){
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* Estilo de seções secundárias */
+:is(.second-section,.fourth-section,.custom-button){
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.title{
+    color: #cbdad5;
+}
+
+.second-section p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--white);
+    flex-direction: column;
+}
+
+.trird-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Estilo da terceira seção */
+.trird-section > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trird-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.trird-section > div p{
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+/* Estilo do rodapé */
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Estilo de imagens com sombra */
+:is(.img-profile,.img-Who-I-Am-i){
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
+
+/* Estilo do formulário de contato */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form{
+    justify-content: center;
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: "Lato";
+    font-size: 16px;
+    max-width: 500px;
+}
+
+/* Estilo do rodapé para o texto final*/
+.rodape{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: "Lato";
+}
+
+.contact-form input{
+    width: 100%;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+
+.contact-form input[type=text] {
+    height: 50px;
+}
+
+
+/* Estilo adicional para texto */
+.the-and{
+    font-family: 'Lato';
+    color: #fff;
+}
+
+
+
